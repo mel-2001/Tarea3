@@ -31,3 +31,17 @@ print("----------------------------------------------")
 print("\n Ordenar por carrera descendente\n")
 print(df.sort_values(by='Carrera', ascending=False))
 print("----------------------------------------------")
+
+#  visualización usando el índice numeral (iloc) 
+print("\nVisualización usando el índice numeral (iloc)\n")
+print(df.iloc[[0]])
+print(df.iloc[[1]])
+print(df.iloc[[2]])
+print("----------------------------------------------")
+
+#  visualización usando el índice textual de los estudiantes a partir de la tercera entrada.
+print("\nVisualización usando el índice textual (iloc)\n")
+print(df.loc[["est0"]])
+print(df.loc[["est1"]])
+print(df.loc[["est2"]])
+print("----------------------------------------------")
