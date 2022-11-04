@@ -45,3 +45,17 @@ print(df.loc[["est0"]])
 print(df.loc[["est1"]])
 print(df.loc[["est2"]])
 print("----------------------------------------------")
+#  mostrar para los estudiantes de las posiciones binarias 2,3,5 de los datos de carrera 
+# y edada únicamente.
+print("\n Mostrar la carrera y la edad de los estudiantes  2,3,5\n")
+print(df[['Nombre','Edad']].iloc[[1]])
+print("<<<<<<<<<<<<<<<>>>>>>>>>>>>>>")
+print(df[['Nombre','Edad']].iloc[[2]])
+print("<<<<<<<<<<<<<<<>>>>>>>>>>>>>>")
+print(df[['Nombre','Edad']].iloc[[4]])
+print("<<<<<<<<<<<<<<<>>>>>>>>>>>>>>")
+
+print("----------------------------------------------")
+
+# Exportar
+df.to_excel("exportacion.xlsx")  
