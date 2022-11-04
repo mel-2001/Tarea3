@@ -19,3 +19,12 @@ print(df)
 
 print("-----------------------------------------------------------------")
 
+print(df[['Costa.Rica','Uruguay', 'Brazil', 'Spain', 'Italy', 'France', 'Canada']].loc['1/23/2020':'10/15/2020'])
+
+print("-----------------------------------------------------------------")
+df2 = df[['Costa.Rica']]
+df2.plot()
+plt.show()
+
+df[['Spain', 'Italy', 'France']].loc['1/23/2020':'10/15/2020'].plot()
+plt.show()
